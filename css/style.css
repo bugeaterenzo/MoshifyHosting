@@ -8,10 +8,10 @@ html{
 
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
-    --color-secondary: #ff3400;
+    --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
-    --color-accent: #ed4714;
+    
 
 }
 
@@ -84,4 +84,42 @@ a{
     .link-arrow{
         font-size: 1.5rem;
     }
+}
+
+/* Badges */
+
+.badge{
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2.5rem;
+}
+
+.badge--small{
+    font-size: 2.2rem;
+}
+
+.badge--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.badge--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .badge{
+        font-size: 3rem;
+    }
+    
+    .badge--small{
+        font-size: 2.6rem;
+    }
+  
 }
