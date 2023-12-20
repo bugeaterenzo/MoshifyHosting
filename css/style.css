@@ -224,7 +224,7 @@ a{
     margin: 1rem 0;
     outline: 0;
     text-transform: uppercase;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     border: 0;
     border-radius: 40px;
     cursor: pointer;
@@ -321,6 +321,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn{
@@ -667,9 +668,13 @@ a{
     padding: var(--padding-verticle) 2rem;
 }
 
+.block--feature{
+    padding-bottom: 6rem;
+}
+
 .block--header{
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .block--heading{
@@ -811,13 +816,14 @@ a{
 
 .block-domain__prices{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
     justify-items: center;
     max-width: 700px;
     margin: 0 auto;
+    color: var(--color-headings);
 }
 
 @media only screen and (min-width: 768px) {
@@ -842,6 +848,8 @@ a{
 
 /* Features */
 
+
+
 .feature__heading{
     margin: 1rem 0;
 }
@@ -860,15 +868,7 @@ a{
 }
 
 
-@media only screen and (min-width: 768px) {
-
-    .feature:nth-of-type(even) .feature__content{
-        order: 2;
-    }
-  
-}
-
-/* Shocase block */
+/* Showcase block */
 
 .block-showcase_img >img{
     width: 100%;
@@ -877,6 +877,10 @@ a{
 
 @media only screen and (min-width: 768px) {
 
+    .feature{
+        gap: 4rem 2rem;
+        margin: 6rem 0;
+    }
 
     .block--showcase .grid{
         grid-template-columns: 50% 50% ;
